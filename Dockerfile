@@ -20,8 +20,9 @@ RUN apt-get update \
 
 COPY bundle.cjs ./
 COPY frontend/dist ./frontend/dist/
+COPY reset.cjs entrypoint.sh ./
 
 VOLUME ["/app/data"]
 EXPOSE 4000
 
-CMD ["node", "bundle.cjs"]
+CMD ["sh", "/app/entrypoint.sh"]
