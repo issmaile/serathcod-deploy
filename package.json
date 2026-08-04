@@ -5,6 +5,7 @@
   "description": "Serath production bundle",
   "main": "bundle.cjs",
   "dependencies": {
-    "better-sqlite3": "^12.10.0"
+    "better-sqlite3": "^12.10.0",
+    "meta-ads-mcp-server": "1.5.1"
   }
 }
